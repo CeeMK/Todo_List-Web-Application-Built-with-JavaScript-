@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <!--Css styles-->
+        <link rel="stylesheet" href="assets/css/todo_List_Styles.css">
+    </head>
+    <body>
+        <header role="heading">
+            <h1>Todo List Application</h1>
+        </header>
+        <main role="application">
+            <!--Input division. Area where the todo item and due date is inputed and added.-->
+            <div role="form" class="todoInputGrid_css">
+                <!--Input for todo item.-->
+                <input id= "todoListItem" class="todoListItem_Js todaListItem_Css" required onkeydown="
+                    todoList.handleCostKey(event);">
+                <!--Input for todo list duedate.-->
+                <input type="date" class = "todoListDate" required onkeydown="
+                todoList.handleCostKey(event);">
+                <!--Button to delete todo list.-->
+                <button type ="submit" class="todoListAddBtn_Js todoListAddBtn_Css">Add
+                </button>
+            </div>
+            
+            <!--Todo list division where the list is rendered.-->
+            <div role="contentinfo" class="todoListParagraphs-js todoListParagraphs-css"></div>
+
+            <!--Button that cleans the todo list.-->
+            <button class="todoListClear-Btn-js todoListClear-Btn-css">Clear Todo List</button>
+        </main>
+        <!--JavaScript-->
+        <footer role="contentinfo">
+            <p>&copy Carl Kiragi 2021</p>
+        </footer>
+        <script src="assets/javaScript/todo_List_Js.js"></script>
+    </body>
+</html>

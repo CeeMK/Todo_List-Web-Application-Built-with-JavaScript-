@@ -1,0 +1,59 @@
+body{
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #04323a;
+}
+h1{
+    color: aqua;
+}
+.todoInputGrid_css, .todoListParagraphs-css{
+    display: grid;
+    grid-template-columns: 58% 25% 15%;
+    column-gap: 1%;
+    column-rule-color: red;
+    font-family: Arial;
+    font-size: 15px;
+}
+.todoListParagraphs-css{
+    margin-top: 10px;
+    background-color: aqua;
+}
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    background-color: black;
+    color: aqua;
+}
+
+button.todoListAddBtn_Css:hover{
+    border: none;
+    background-color: yellowgreen;
+    color: black;
+    padding: 5px 5px;
+}
+button.todoItemDelBtn-css{
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px 2px;
+}
+button.todoItemDelBtn-css:hover{
+    border: none;
+    background-color: rgb(242, 5, 5);
+    color: black;
+}
+
+button.todoListClear-Btn-css{
+    cursor: pointer;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+
+button.todoListClear-Btn-css:hover{
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: black;
+
+}
